@@ -9,32 +9,43 @@
 <body>
 <div class="container">
     <h1>AI Resume Tailoring Tool</h1>
-
+    <p>name</p>
     <input id="name" placeholder="Name">
+    <p>phone</p>
     <input id="phone" placeholder="Phone">
+    <p>city</p>
     <input id="city" placeholder="City">
+    <p>state</p>
     <input id="state" placeholder="State">
-
+    <p>biography</p>
     <textarea id="biography" placeholder="Professional Summary"></textarea>
+    <p>skills</p>
     <textarea id="skills" placeholder="Skills (comma-separated)"></textarea>
 
     <div id="experiences">
         <h2>Work Experiences</h2>
         <div class="experience">
+            <p>job title</p>
             <input placeholder="Job Title" class="title">
+            <p>company</p>
             <input placeholder="Company Name" class="company">
+            <p>start</p>
             <input placeholder="Start Month/Year" class="start">
+            <p>end date</p>
             <input placeholder="End Month/Year or Present" class="end">
+            <p>Work Experience details</p>
             <textarea placeholder="Job Description" class="description"></textarea>
         </div>
     </div>
 
     <button onclick="addExperience()">Add Another Experience</button>
-
+    <p>school</p>
     <input id="school" placeholder="School">
+    <p>major</p>
     <input id="major" placeholder="Major">
+    <p>certifications</p>
     <textarea id="certifications" placeholder="Certifications (comma-separated)"></textarea>
-
+    <p>job description to modify resume for</p>
     <textarea id="job_description" placeholder="Paste Job Description Here"></textarea>
 
     <button onclick="submitForm()">Generate Tailored Resume</button>
