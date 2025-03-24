@@ -9,10 +9,9 @@ app = Flask(__name__)
 CORS(app)
 
 # Set your OpenAI API key as an environment variable
-openai.api_key = "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"
-
+openai.api_key = ""
 # Your Mistral API key (provided by you)
-MISTRAL_API_KEY = "u7SCZNVgXwUHbjy3eONViyJwkO0YZjLW"
+MISTRAL_API_KEY = ""
 
 def run_gpt35(prompt):
     try:
