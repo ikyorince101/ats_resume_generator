@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>AI Resume Tailoring Tool</h1>
+
+    <input id="name" placeholder="Name">
+    <input id="phone" placeholder="Phone">
+    <input id="city" placeholder="City">
+    <input id="state" placeholder="State">
+
+    <textarea id="biography" placeholder="Professional Summary"></textarea>
+    <textarea id="skills" placeholder="Skills (comma-separated)"></textarea>
+
+    <div id="experiences">
+        <h2>Work Experiences</h2>
+        <div class="experience">
+            <input placeholder="Job Title" class="title">
+            <input placeholder="Company Name" class="company">
+            <input placeholder="Start Month/Year" class="start">
+            <input placeholder="End Month/Year or Present" class="end">
+            <textarea placeholder="Job Description" class="description"></textarea>
+        </div>
+    </div>
+
+    <button onclick="addExperience()">Add Another Experience</button>
+
+    <input id="school" placeholder="School">
+    <input id="major" placeholder="Major">
+    <textarea id="certifications" placeholder="Certifications (comma-separated)"></textarea>
+
+    <textarea id="job_description" placeholder="Paste Job Description Here"></textarea>
+
+    <button onclick="submitForm()">Generate Tailored Resume</button>
+
+    <div class="output-container">
+        <div>
+            <h3>Your Input Resume</h3>
+            <pre id="original"></pre>
+        </div>
+        <div>
+            <h3>AI Tailored Resume <span id="time"></span></h3>
+            <pre id="result"></pre>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
